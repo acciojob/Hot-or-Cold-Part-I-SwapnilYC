@@ -9,7 +9,7 @@ btn.addEventListener('click', ()=>{
     let random = Math.floor((Math.random()*21));
     let userNum = Number(userGuess.value);
     displayNum.innerText = random;
-    if(random === userNum){
+    if(random <= 20 && random >= -20){
         hotOrCold.innerText = 'Hot';
     }else{
         hotOrCold.innerText = 'Cold';
